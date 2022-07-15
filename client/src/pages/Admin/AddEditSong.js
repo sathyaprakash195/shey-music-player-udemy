@@ -90,10 +90,13 @@ function AddEditSong() {
   }, [allSongs]);
 
   useEffect(() => {
-    if (user?.isAdmin || !user.isAdmin) {
-      navigate("/");
+    if(user)
+    {
+      if ((user?.isAdmin && !user.isAdmin) || !user?.isAdmin) {
+        navigate("/");
+      }
     }
-  }, []);
+  }, [user]);
 
   return (
     <div>
