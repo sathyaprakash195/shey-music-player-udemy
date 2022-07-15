@@ -45,7 +45,7 @@ function Register() {
         <input
           type="text"
           placeholder="Name"
-          value={user.email}
+          value={user.name}
           onChange={(e) => setUser({ ...user, name: e.target.value })}
         />
         <input
