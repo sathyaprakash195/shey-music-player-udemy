@@ -154,8 +154,8 @@ function CreateEditPlaylist() {
           const isSelected = selectedSongs.find((s) => s._id === song._id);
           return (
             <div
-              className={`p-2 flex items-center shadow justify-between border cursor-pointer  border-gray-300 rounded ${
-                isSelected && "border-active border-2"
+              className={`p-2 flex items-center shadow justify-between border cursor-pointer rounded ${
+                isSelected ? "border-active border-2" : "border-gray-300"
               }`}
               onClick={() => selectUnselectSong(song)}
             >
