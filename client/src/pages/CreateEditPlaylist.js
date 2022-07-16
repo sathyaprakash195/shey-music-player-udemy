@@ -120,7 +120,7 @@ function CreateEditPlaylist() {
             navigate("/");
           }}
         ></i>
-        <h1 className="text-3xl">Create Playlist</h1>
+        <h1 className="text-3xl">{selectedPlaylistForEdit ? 'Edit' : 'Add'} Playlist</h1>
       </div>
       <div className="flex justify-between gap-3 mt-5">
         <input
